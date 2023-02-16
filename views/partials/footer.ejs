@@ -1,0 +1,95 @@
+  <!-- Footer -->
+  <div class="container-fluid bg-mainColor py-10">
+    <div class="container mx-auto flex justify-around">
+      <div class="w-6/12 flex justify-start items-center">
+        <a href="/">
+            <img src="/JGW-logo-white-footer.png" alt="">
+        </a>
+      </div>
+      <div class="w-6/12 flex justify-center">
+        <i class="fa-brands fa-facebook text-3xl px-2 text-white hover:-translate-y-2 transition-all duration-500 lg:ml-28"></i>
+        <i
+          class="fa-brands fa-square-twitter text-3xl px-2 text-white hover:-translate-y-2 transition-all duration-500"></i>
+        <i class="fa-brands fa-youtube text-3xl px-2 text-white hover:-translate-y-2 transition-all duration-500"></i>
+      </div>
+    </div>
+    <div class="container mx-auto flex flex-wrap justify-between py-10">
+      <div class="lg:w-3/12 sm:w-6/12">
+        <h3 class="text-white text-2xl pb-5">Structured Settlements</h3>
+        <a href="tel:5554280940"
+          class="font-medium text-white underline hover:bg-hoverColor hover:text-mainColor">555-428-0940</a>
+        <p class="py-5 text-white">
+          All hours are Eastern Time<br>
+          Mon - Thurs: 8 am - 11 pm<br>
+          Fri: 8 am - 9 pm<br>
+          Sat: 9 am - 6 pm<br>
+        </p>
+        <a href="mailto:information@wentworth.com"
+          class="font-medium text-white underline hover:bg-hoverColor hover:text-mainColor">information@wentworth.com</a>
+      </div>
+      <div class="lg:w-3/12 sm:w-6/12">
+        <h3 class="text-white text-2xl pb-5">Debt Relief</h3>
+        <a href="tel:5554280940"
+          class="font-medium text-white underline hover:bg-hoverColor hover:text-mainColor">555-428-0940</a>
+        <p class="py-5 text-white">
+          All hours are Eastern Time<br>
+          Mon - Thurs: 8 am - 11 pm<br>
+          Fri: 8 am - 9 pm<br>
+          Sat: 9 am - 6 pm<br>
+        </p>
+      </div>
+    </div>
+    <div class="container mx-auto text-center">
+      <p class="text-white">Copyright © 2023 Ligitation Funding | Powered by Abov.am</p>
+    </div>
+  </div>
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
+  <script src="//unpkg.com/alpinejs" defer></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script>
+
+    // Getting hamburguer menu in small screens
+    const menu = document.getElementById("menu");
+    const ulMenu = document.getElementById("ulMenu");
+
+    function menuToggle() {
+      menu.classList.toggle("h-48");
+    }
+
+    // Browser resize listener
+    window.addEventListener("resize", menuResize);
+
+    // Resize menu if user changing the width with responsive menu opened
+    function menuResize() {
+      // First get the size from the window
+      const window_size = window.innerWidth || document.body.clientWidth;
+      if (window_size > 640) {
+        menu.classList.remove("h-48");
+      }
+    }
+
+
+    $(document).scroll(function () {
+        let x = window.scrollY;
+        if(x >= 10){
+            $('#header__section').css({
+                backgroundColor:"#fff",
+                borderBottom:"2px solid #1B976A"
+            })
+        } else{
+            $('#header__section').css({
+                backgroundColor:"#fff",
+                borderBottom:"none"
+            })
+        }
+    });
+
+
+  </script>
+</body>
+
+</html>

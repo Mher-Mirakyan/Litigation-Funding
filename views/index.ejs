@@ -1,0 +1,218 @@
+    <%- include('partials/header'); %>
+
+  <!-- Section 1 -->
+  <div class="container md:flex md:mx-auto md:py-20 sm:block md:justify-between lg:justify-between">
+    <div class="md:w-5/12 md:pl-20 sm:w-full sm:pl-0">
+      <h1 class="text-3xl md:text-5xl lg:text-7xl font-bold py-5 px-5 md:py-0 md:px-0"><%= sec_1_title %></h1>
+      <p class="text-lg px-5 sm:px-5 md:px-0 lg:px-0 lg:text-xl xl:text-xl mt-5 mb-5 font-medium"><%= sec_1_paragraph_1 %><br><br>
+        <%= sec_1_paragraph_2 %></p>
+    </div>
+    <div class="w-2/12 md:hidden lg:hidden"></div>
+    <div class="md:w-5/12 sm:w-full">
+      <form class="w-full max-w-lg  mx-auto px-5">
+        <div class="flex flex-wrap -mx-3 mb-6 justify-between">
+          <div class="w-full sm:w-1/2 md:w-1/2 px-3 mb-6 md:mb-0">
+            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+              First Name <span class="text-red-600">*</span>
+            </label>
+            <input
+              class="appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-mainColor"
+              id="grid-first-name" type="text" placeholder="">
+          </div>
+          <div class="w-full sm:w-1/2 md:w-1/2 px-3">
+            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+              Last Name <span class="text-red-600">*</span>
+            </label>
+            <input
+              class="appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:border-gray-500"
+              id="grid-last-name" type="text" placeholder="">
+          </div>
+        </div>
+        <div class="flex flex-wrap -mx-3 mb-6 justify-between">
+          <div class="w-full sm:w-1/2 md:w-1/2 px-3 mb-6 md:mb-0">
+            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-email">
+              Email Address <span class="text-red-600">*</span>
+            </label>
+            <input
+              class="appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-gray-500"
+              id="grid-email" type="email" placeholder="">
+          </div>
+          <div class="w-full sm:w-1/2 md:w-1/2 px-3">
+            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-phone">
+              Phone <span class="text-red-600">*</span>
+            </label>
+            <input
+              class="appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:border-gray-500"
+              id="grid-phone" type="tel" placeholder="">
+          </div>
+        </div>
+        <div class="flex flex-wrap -mx-3 mb-2">
+          <div class="w-full  px-3 mb-6 md:mb-0">
+            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-state">
+              I am interested in ... <span class="text-red-600">*</span>
+            </label>
+            <div class="relative">
+              <select
+                class="block appearance-none w-full bg-white border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                id="grid-state">
+                <option>- Select -</option>
+                <option>Structured Settlements</option>
+                <option>Debt Relief/Debt Settlement</option>
+                <option>Pre-Settlement</option>
+                <option>Annuities</option>
+                <option>Lottery Prize Payments</option>
+                <option>Other Ways to Get Cash</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-wrap -mx-3 mb-2">
+          <div class="w-full  px-3 mb-6 md:mb-0">
+            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-state">
+              US States <span class="text-red-600">*</span>
+            </label>
+            <div class="relative">
+              <select
+                class="block appearance-none w-full bg-white border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                id="grid-state">
+                <option>- Select -</option>
+                <option>Alabama</option>
+                <option>Alaska</option>
+                <option>Arizona</option>
+                <option>Arkansas</option>
+                <option>California</option>
+                <option>Colorado</option>
+                <option>Connecticut</option>
+                <option>Delaware</option>
+                <option>District of Columbia</option>
+                <option>Florida</option>
+                <option>Georgia</option>
+                <option>Hawaii</option>
+                <option>Idaho</option>
+                <option>Illinois</option>
+                <option>Indiana</option>
+                <option>Iowa</option>
+                <option>Kansas</option>
+                <option>Kentucky</option>
+                <option>Louisiana</option>
+                <option>Maine</option>
+                <option>Maryland</option>
+                <option>Massachusetts</option>
+                <option>Michigan</option>
+                <option>Minnesota</option>
+                <option>Mississippi</option>
+                <option>Missouri</option>
+                <option>Montana</option>
+                <option>Nebraska</option>
+                <option>Nevada</option>
+                <option>New Hampshire</option>
+                <option>New Jersey</option>
+                <option>New Mexico</option>
+                <option>New York</option>
+                <option>North Carolina</option>
+                <option>North Dakota</option>
+                <option>Ohio</option>
+                <option>Oklahoma</option>
+                <option>Oregon</option>
+                <option>Pennsylvania</option>
+                <option>Rhode Island</option>
+                <option>South Carolina</option>
+                <option>South Dakota</option>
+                <option>Tennessee</option>
+                <option>Texas</option>
+                <option>Utah</option>
+                <option>Vermont</option>
+                <option>Virginia</option>
+                <option>Washington</option>
+                <option>West Virginia</option>
+                <option>Wisconsin</option>
+                <option>Wyoming</option>
+              </select>
+            </div>
+            <p class="mt-5 text-md font-medium">By submitting this form, I am providing JG Wentworth with express
+              written consent to contact me regarding product offerings by SMS/text messages or by using an auto dialer
+              (or automated means) at the phone number(s) provided and such consent is not a condition of a purchase.
+            </p>
+          </div>
+        </div>
+        <button class="uppercase w-full bg-mainColor text-white mt-5 py-5 rounded-xl font-bold">submit</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Section 2 -->
+  <div class="container mx-auto my-20">
+    <div class="w-full text-center">
+      <h2 class="text-5xl font-semibold pb-5 px-5"><%= sec_2_title %></h2>
+      <p class="text-lg xl:text-2xl font-normal px-5"><%= sec_2_subtitle %></p>
+    </div>
+    <div class="xl:flex xl:justify-between mt-10">
+      <div
+        class="bg-white py-10 px-10 shadow-2xl transition-all duration-500 hover:-translate-y-4 hover:bg-hoverblockColor mb-5 xl:mb-0 xl:w-6/12 xl:mr-5">
+        <img src="/3_StructuredSettlements.png.webp" alt="">
+        <h3 class="text-2xl font-semibold pb-5">I was awarded a settlement</h3>
+        <p class="text-lg font-normal pb-5">One benefit of having a structured settlement is that you get long-term
+          financial security in the form of a reliable stream of income. Even better, as the recipient of a structured
+          settlement, you have the right to sell part or all of your overall payment stream in exchange for a lump
+          sum—and that’s where JG Wentworth can help.</p>
+        <button class="font-normal border-black border-b-2 hover:border-mainColor">About Structured Settlement <i
+            class="fa-solid fa-arrow-right"></i></button>
+      </div>
+      <div
+        class="bg-white py-10 px-10 shadow-2xl transition-all duration-500 hover:-translate-y-4 hover:bg-hoverblockColor xl:w-6/12 xl:ml-5">
+        <img src="/4_DebtRelief.png.webp" alt="">
+        <h3 class="text-2xl font-semibold pb-5">I was awarded a settlement</h3>
+        <p class="text-lg font-normal pb-5">One benefit of having a structured settlement is that you get long-term
+          financial security in the form of a reliable stream of income. Even better, as the recipient of a structured
+          settlement, you have the right to sell part or all of your overall payment stream in exchange for a lump
+          sum—and that’s where JG Wentworth can help.</p>
+        <button class="font-normal border-black border-b-2 hover:border-mainColor">About Structured Settlement <i
+            class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 3 -->
+  <div class="container mx-auto">
+    <div class="w-full xl:flex xl:justify-between py-20">
+      <div
+        class="lg:w-full bg-white py-10 px-10 shadow-2xl transition-all duration-500 hover:-translate-y-4 hover:bg-hoverblockColor sm:w-full sm:mb-10 xl:mr-5">
+        <h3 class="text-2xl font-semibold pb-5">I was awarded a settlement</h3>
+        <p class="text-lg font-normal pb-5">One benefit of having a structured settlement is that you get long-term
+          financial security in the form of a reliable stream of income. Even better, as the recipient of a structured
+          settlement, you have the right to sell part or all of your overall payment stream in exchange for a lump
+          sum—and that’s where JG Wentworth can help.</p>
+        <button class="font-normal border-black border-b-2 hover:border-mainColor">About Structured Settlement <i
+            class="fa-solid fa-arrow-right"></i></button>
+      </div>
+      <div
+        class="lg:w-full bg-white py-10 px-10 shadow-2xl transition-all duration-500 hover:-translate-y-4 hover:bg-hoverblockColor sm:w-full sm:mx-0 sm:mb-10 xl:mr-5 xl:ml-5">
+        <h3 class="text-2xl font-semibold pb-5">I was awarded a settlement</h3>
+        <p class="text-lg font-normal pb-5">One benefit of having a structured settlement is that you get long-term
+          financial security in the form of a reliable stream of income. Even better, as the recipient of a structured
+          settlement, you have the right to sell part or all of your overall payment stream in exchange for a lump
+          sum—and that’s where JG Wentworth can help.</p>
+        <button class="font-normal border-black border-b-2 hover:border-mainColor">About Structured Settlement <i
+            class="fa-solid fa-arrow-right"></i></button>
+      </div>
+      <div
+        class="lg:w-full bg-white py-10 px-10 shadow-2xl transition-all duration-500 hover:-translate-y-4 hover:bg-hoverblockColor sm:w-full sm:mb-10 xl:ml-5">
+        <h3 class="text-2xl font-semibold pb-5">I was awarded a settlement</h3>
+        <p class="text-lg font-normal pb-5">One benefit of having a structured settlement is that you get long-term
+          financial security in the form of a reliable stream of income. Even better, as the recipient of a structured
+          settlement, you have the right to sell part or all of your overall payment stream in exchange for a lump
+          sum—and that’s where JG Wentworth can help.</p>
+        <button class="font-normal border-black border-b-2 hover:border-mainColor">About Structured Settlement <i
+            class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 4 -->
+  <div class="container-fluid bg-slate-200">
+    <div class="container mx-auto py-20">
+      <p class="text-lg italic px-10"><%= sec_4_paragraph %></p>
+    </div>
+  </div>
+
+    <%- include('partials/footer'); %>

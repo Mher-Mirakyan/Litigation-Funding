@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/stylesheets/style.css">
+    
+</head>
+<body>
+  <!-- header -->
+  <div class="container-fluid shadow-md box-border">
+    <div class="bg-mainColor text-center mx-auto p-1">
+      <p class="text-center text-lg font-semibold text-white"><i class="fa-solid fa-phone"></i> To get cash now call <a href="tel:5554280940" class="underline hover:bg-hoverColor hover:text-mainColor">555-428-0940</a></p>
+    </div>
+  </div>
+
+
+  <!-- Header Menu-->
+  <div class="container-fluid sticky top-0 w-full flex justify-center transition-all duration-300 z-50 ease-linear bg-white shadow-md"id="header__section">
+    <div class="container">
+      <nav id="nav" class="w-full" role="navigation">
+        <div class="container mx-auto overflow-hidden xl:p-5 flex flex-wrap items-center md:flex-no-wrap">
+          <div class="mr-4 md:mr-8">
+            <a href="/" rel="home">
+              <img src="/JGW logo header.png" class="" alt="">
+            </a>
+          </div>
+          <div class="ml-auto xl:hidden">
+            <button onclick="menuToggle()" class="flex items-center px-3 py-2 border rounded" type="button">
+              <svg class="h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill="mainColor" d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+              </svg>
+            </button>
+          </div>
+          <div id="menu" class="w-full h-0 transition-all ease-out duration-500 xl:transition-none xl:w-auto xl:flex-grow xl:flex xl:items-center max-xl:overflow-hidden">
+            <ul id="ulMenu" class="flex flex-col duration-300 ease-linear sm:transition-none mt-0 mx-4 xl:flex-row xl:items-center xl:mx-0 xl:ml-auto xl:mt-0 xl:pt-0 xl:border-0 xl:space-x-6">
+              <li class="md:p-1 lg:px-4 font-semibold block text-gray-800 px-4 py-1  hover:text-mainColor hover:border-b-4 hover:border-mainColor"><a  href="/" title="Home">Home</a></li>
+              <li class="md:p-1 lg:px-4 font-semibold block text-gray-800 px-4 py-1  hover:text-mainColor hover:border-b-4 hover:border-mainColor"><a href="/services">Services</a></li>
+              <li class="md:p-1 lg:px-4 font-semibold block text-gray-800 px-4 py-1  hover:text-mainColor hover:border-b-4 hover:border-mainColor"> <a href="/about">About</a></li>
+              
+              <!--end Hoverable Link-->
+              <li class="header-link">
+                <div>
+                  <a href="/casesWeHundle"><button id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover" class="text-gray-800 font-semibold hover:text-mainColor px-4 py-2.5 text-center inline-flex items-center" type="button">Cases We Hundle <svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button></a>
+                            <!-- Dropdown menu -->
+                            <div id="dropdownHover" class="z-50 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                                <ul class="py-2 text-sm text-mainColor dark:text-gray-200" aria-labelledby="dropdownHoverButton">
+                                  <li>
+                                    <a href="/legalFunding" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Legal Funding</a>
+                                  </li>
+                                  <li>
+                                    <a href="/PersonalInjury" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Personal Injury</a>
+                                  </li>
+                                  <li>
+                                    <a href="/CarAccident" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Car Accident</a>
+                                  </li>
+                                  <li>
+                                    <a href="/SlipAndFall" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Slip and Fall</a>
+                                  </li>
+                                  <li>
+                                    <a href="/ActAndMaritime" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Jones Act and Maritime</a>
+                                  </li>
+                                </ul>
+                            </div>
+                </div>
+              </li>
+              <li class="md:p-2 lg:px-4 font-semibold block text-gray-800 px-4 py-1  hover:text-mainColor hover:border-b-4 hover:border-mainColor"><a href="/forAttorneys">For Attorneys</a></li>
+              <li class="md:p-2 lg:px-4 font-semibold block text-gray-800 px-4 py-1  hover:text-mainColor hover:border-b-4 hover:border-mainColor"><a href="#">Why Us</a></li>
+              <li class="md:p-2 lg:px-4 font-semibold block text-gray-800 px-4 py-1  hover:text-mainColor hover:border-b-4 hover:border-mainColor"><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>

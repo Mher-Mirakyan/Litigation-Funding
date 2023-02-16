@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities; 
+
+.menu-li{
+    @apply pb-7 px-5 hover:text-mainColor hover:border-b-4 hover:border-mainColor box-border
+
+}
+
+
+.hoverable {
+    @apply static 
+}
+
+.mega-menu {
+    @apply hidden left-0 absolute text-left w-full
+}
+
+.hoverable a { 
+    @apply relative top-[0px] after:content-['\25BC'] after:text-2xl after:top-[0px] after:relative after:right-0 after:max-xl:hidden
+}
+
+.hoverable:hover .mega-menu {
+    @apply block max-xl:hidden
+}

@@ -1,0 +1,75 @@
+<%- include('partials/header'); %>
+
+    <!-- Section 1 -->
+    <div style="background-image: url('/legal-funds.webp');" class="container-fluid bg-cover bg-no-repeat bg-center py-40 relative">
+        <div class="absolute h-full w-full top-0 left-0" style="background:rgba(0,0,0,0.5)"></div>
+            <h2 class="text-5xl font-bold text-white text-center relative z-30"><%= sec_1_title %></h2>
+       </div>
+    
+       <!-- Section 2 -->
+       <div class="container-fluid bg-white pt-10 pb-48">
+        <div class="mx-auto text-center flex justify-center">
+            <p class="text-mainColor text-3xl lg:w-2/3"><%= sec_2_title %></p>
+        </div>
+        <div class="container mx-auto py-10 lg:flex lg:justify-around">
+            <div class="w-full lg:w-1/2 py-10 px-10">
+                <h4 class="text-gray-700 font-bold text-lg"><%= sec_2_block_1_title %></h4>
+                <p><%= sec_2_block_1_paragraph %></p>
+            </div>
+            <div class="w-full lg:w-1/2 py-10 px-10">
+                <h4 class="text-gray-700 font-bold  text-lg"><%= sec_2_block_2_title %></h4>
+                <p><%= sec_2_block_2_paragraph %></p>
+            </div>
+        </div>
+        <div class="w-full container mx-auto lg:flex lg:justify-around">
+            <a href="#"><button class="bg-mainColor w-full mb-2 box-border py-3 lg:px-16 text-white text-xl font-bold rounded-full hover:bg-black duration-200"><%= sec_2_btn1 %></button></a>
+            <a href="#"><button class="bg-mainColor w-full mb-2 py-3 lg:px-16 text-white text-xl font-bold rounded-full hover:bg-black duration-200"><%= sec_2_btn2 %></button></a>
+            <a href="#"><button class="bg-mainColor w-full mb-2 py-3 lg:px-16 text-white text-xl font-bold rounded-full hover:bg-black duration-200"><%= sec_2_btn3 %></button></a>
+            <a href="#"><button class="bg-mainColor w-full mb-2 py-3 lg:px-16 text-white text-xl font-bold rounded-full hover:bg-black duration-200"><%= sec_2_btn4 %></button></a>
+        </div>
+       </div>
+    
+       <!-- Section 3 -->
+       <div class="container-fluid relative bg-gray-100 pt-28 pb-12">
+            <div class="w-full mx-auto flex justify-center items-center absolute  -top-[6%] sm:-top-[7%] md:-top-[12%] lg:-top-[25%]">
+                <img src="/money-3-1024x334.png.webp" alt="" class="">
+           </div>
+           <div class="container mx-auto lg:flex lg:justify-around">
+            <div class="w-full lg:w-1/2 py-10 px-12">
+                <h4 class="text-mainColor font-bold text-xl"><%= sec_3_block_1_title %></h4>
+                <p class="text-lg py-5"><%= sec_3_block_1_paragraph %></p>
+            </div>
+            <div class="w-full lg:w-1/2 py-10 px-12">
+                <h4 class="text-mainColor font-bold text-xl"><%= sec_3_block_2_title %></h4>
+                <p class="text-lg py-5"><%= sec_3_block_2_paragraph %></p>
+            </div>
+           </div>
+           <div class="container mx-auto lg:flex lg:justify-around">
+            <div class="w-full lg:w-1/2 py-10 px-12">
+                <h4 class="text-mainColor font-bold text-xl"><%= sec_3_block_3_title %></h4>
+                <p class="text-lg py-5"><%= sec_3_block_3_paragraph %></p>
+            </div>
+            <div class="w-full lg:w-1/2 py-10 px-12">
+                <h4 class="text-mainColor font-bold text-xl"><%= sec_3_block_4_title %></h4>
+                <p class="text-lg py-5"><%= sec_3_block_4_paragraph %></p>
+            </div>
+           </div>
+       </div>
+     
+       <%- include('partials/registrationForm', {info: registrationForm}) ; %>
+    
+       <!-- Section 5 -->
+       <div style="background-image: url('/auto-accidents.webp');" class="container-fluid py-32 bg-cover bg-no-repeat bg-center relative">
+        <div class="absolute h-full w-full top-0 left-0" style="background:rgba(0,0,0,0.5)"></div>
+        <div class="container mx-auto relative z-40 text-center">
+            <h2 class="text-white text-6xl font-bold">Cash relief now.</h2>
+            <div class="w-full container mx-auto lg:flex lg:justify-center px-4 mt-3">
+                <button class="bg-mainColor text-white text-xl font-bold rounded-full w-full lg:w-2/12 lg:mr-2 mb-2 py-3 lg:px-16 duration-300 hover:bg-white hover:text-black">Call Now</button>
+                <button class="bg-mainColor text-white text-xl font-bold rounded-full w-full lg:w-2/12 lg:ml-2 mb-2 py-3 lg:px-16 duration-300 hover:bg-white hover:text-black">Apply Online</button>
+            </div>
+        </div>
+       </div>  
+
+       
+
+<%- include('partials/footer'); %>
