@@ -93,8 +93,8 @@ app.get("/services", function (req, res) {
   });
 
 // define a static HTML view route
-app.get("/casesWeHundle", function (req, res) {
-  res.render("casesWeHundle", {
+app.get("/casesWeHandle", function (req, res) {
+  res.render("casesWeHandle", {
     sec_1_title: 'Types of Lawsuit Funding',
     sec_2_title: 'Express Legal Funding can help you move forward financially. We can provide pre-settlement cash advances for all types of personal injury and civil lawsuit cases.',
     sec_2_block_1_title: 'Experts in Lawsuit Funding',
@@ -388,8 +388,10 @@ app.get("/ActAndMaritime", function (req, res) {
     sec_2_title: 'Legal funding for your Jones Act injury claim can ease your financial burden. Unlike a Jones Act lawsuit loan, lawsuit funding is risk-free!',
     sec_2_block_1_paragraph_1: '<span class="font-bold">Jones Act lawsuit funding</span>, which is often incorrectly referred to as “Jones Act lawsuit settlement loans,” can help you pay your bills and make purchases. We know that no matter your unique financial situation, maritime accidents bring additional expenses and lost wages.',
     sec_2_block_1_paragraph_2: ' That’s why we make injured maritime worker funding fast and affordable! So you can get cash relief, and your attorney can keep fighting for your maritime case settlement..',
+    sec_2_block_1_paragraph_3: '',
     sec_2_block_2_paragraph_1: 'Unlike personal injury lawsuit loans, personal injury legal funding isn’t a credit based loan of any type. Meaning we do not consider or need to pull your credit history. So you don’t have to worry about a bad credit score making your interest rates go up.',
     sec_2_block_2_paragraph_2: 'Just like your maritime injury attorney hired on contingency, we don’t get paid unless you win! Call us at (888) 232-9223 or apply online to get financial relief today.',
+    sec_2_block_2_paragraph_3: '',
     sec_3_title: 'Maritime Law Cases We Handle',
     sec_3_paragraph_1: 'We can provide lawsuit funding for all types of personal injury and civil lawsuit cases. If you are reading this right now and seeking money for your injuries and damages that another person or company caused, you are qualified to apply for legal funding on your case anytime.',
     sec_3_paragraph_2: 'You can use any computer or mobile device with internet access to apply for a lawsuit cash advance. Or give us a call 24/7, day or night. The choice is yours!',
