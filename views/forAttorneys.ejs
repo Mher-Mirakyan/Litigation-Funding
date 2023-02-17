@@ -7,7 +7,7 @@
        </div>
 
     <!-- Section 2 -->
-    <div class="container-fluid bg-white pt-10 pb-48">
+    <div class="container-fluid bg-white pt-10 pb-48 px-5">
         <div class="mx-auto text-center flex justify-center">
             <p class="text-mainColor text-3xl lg:w-2/3">Express Legal Funding is on your client’s side. We can provide client legal funding without the hassle.</p>
         </div>
@@ -30,14 +30,14 @@
             <img src="/money-3-1024x334.png.webp" alt="" class="">
        </div>
        <div class="container mx-auto lg:flex lg:justify-around">
-        <div class="w-full lg:w-1/2 py-10 px-12">
+        <div class="w-full lg:w-1/2 py-10 px-5 lg:px-12">
             <h4 class="text-mainColor font-bold text-6xl">Help Clients Regain Financial Freedom</h4>
             <p class="text-lg py-5">Client legal funding, often incorrectly referred to as “pre-settlement loans,” can help your clients pay their bills and make new purchases. We know that injuries bring additional expenses and lost wages no matter your clients’ unique financial situations.<br><br>
 
                 That’s why we make client legal funding fast and affordable! So your clients can get the financial help they need, and you can keep fighting for the fair and just settlements your clients deserve.</p>
         </div>
         <div class="w-full lg:w-1/2 py-10 px-12 flex justify-between">
-            <ul class="list-disc text-lg text-mainColor leading-10 w-1/2">
+            <ul class="list-disc text-lg text-mainColor leading-10 w-full lg:w-1/2">
                 <% if (locals.listItems && listItems.length > 0) { %>
                     <% listItems.forEach(function(item, index) { %>
                         <li> <%= item %> </li>
@@ -51,26 +51,26 @@
    </div>
 
     <!-- Section 4 -->
-    <div class="container-fluid bg-white py-20">
+    <div class="container-fluid bg-white py-20 px-5">
         <div class="container mx-auto text-center">
-            <h2 class="text-7xl text-gray-800 font-bold">Transparent Funding Contracts</h2>
+            <h2 class="text-3xl lg:text-7xl text-gray-800 font-bold">Transparent Funding Contracts</h2>
             <p class="text-2xl text-mainColor py-10 w-2/3 mx-auto">We stand by the transparency and affordability of our client legal funding agreements. That’s why we love it when attorneys and law firm staff request a sample contract as proof. Contact us now for your sample funding agreement.</p>
-            <a href="#"><button class="bg-mainColor mb-2 py-3 lg:px-16 text-white text-xl font-bold rounded-full hover:bg-black duration-200">Contact Us</button></a>
+            <a href="#"><button class="bg-mainColor mb-2 py-3 lg:px-16 text-white text-xl font-bold rounded-full hover:bg-black duration-200 w-full lg:w-2/12">Contact Us</button></a>
 
         </div>
     </div>
 
     <!-- Section 5 -->
-    <div class="container-fluid relative bg-gray-100 pt-28 pb-12">
+    <div class="container-fluid relative bg-gray-100 lg:pt-28 pb-12 px-5">
        <div class="container mx-auto lg:flex lg:justify-around">
-        <div class="w-full lg:w-1/2 py-10 px-12">
+        <div class="w-full lg:w-1/2 py-10 lg:px-12">
             <h4 class="text-mainColor font-bold text-3xl">Cases We Fund</h4>
             <p class="text-lg py-5">We can provide client legal funding for all types of personal injury and civil lawsuit cases in which the attorney is on a contingency fee basis. As long as your clients seek financial compensation for their injuries or damages, they are qualified to apply for legal funding.<br><br>
 
                 We can advance your clients anywhere between $550 to $500,000 in cash, depending on the value of their case. </p>
         </div>
-        <div class="w-full lg:w-1/2 py-10 px-12 flex justify-between">
-            <ul class="list-disc text-lg text-mainColor leading-10 w-1/2">
+        <div class="w-full lg:w-1/2 py-10 px-12 lg:flex justify-between">
+            <ul class="list-disc text-lg text-mainColor leading-10 w-full lg:w-1/2">
                 <% if (locals.listItems1 && listItems1.length > 0) { %>
                     <% listItems1.forEach(function(item, index) { %>
                         <li> <%= item %> </li>
@@ -79,7 +79,7 @@
                     <% }); %>
                 <% } %>
             </ul>
-            <ul class="list-disc text-lg text-mainColor leading-10 w-1/2">
+            <ul class="list-disc text-lg text-mainColor leading-10 w-full lg:w-1/2 pt-10 lg:pt-0">
                 <% if (locals.listItems2 && listItems2.length > 0) { %>
                     <% listItems2.forEach(function(item, index) { %>
                         <li> <%= item %> </li>
@@ -107,7 +107,7 @@
        </div>  
 
     <!-- Section 7 (Questions) -->
-    <div class="container-fluid bg-white py-20">
+    <div class="container-fluid bg-white py-20 px-5 lg:px-0">
         <div class="container mx-auto">
             <h2 class="text-mainColor font-bold text-5xl pb-5">Support Team</h2> <hr>
             <div x-data="{ open: false }" class=" bg-gray-50 py-2 flex flex-col items-center justify-center relative overflow-hidden ">
@@ -194,7 +194,7 @@
     </div>
 
     <!-- Section 8 (Questions) -->
-    <div class="container-fluid bg-gray-100 py-20">
+    <div class="container-fluid bg-gray-100 py-20 px-5 lg:px-0">
             <div class="container mx-auto">
                 <h2 class="text-mainColor font-bold text-5xl pb-5">Practical Questions</h2> <hr>
                 <div x-data="{ open: false }" class=" bg-gray-50 py-2 flex flex-col items-center justify-center relative overflow-hidden ">
@@ -301,7 +301,7 @@
     </div>
    
     <!-- Section 9 (Questions) -->
-    <div class="container-fluid bg-white py-20">
+    <div class="container-fluid bg-white py-20 px-5 lg:px-0">
         <div class="container mx-auto">
             <h2 class="text-mainColor font-bold text-5xl pb-5">Interest Rates</h2> <hr>
             <div x-data="{ open: false }" class="bg-gray-50 py-2 flex flex-col items-center justify-center relative overflow-hidden ">
@@ -404,7 +404,7 @@
     </div>
 
     <!-- Section 10 (Questions) -->
- <div class="container-fluid bg-gray-100 py-20">
+ <div class="container-fluid bg-gray-100 py-20 px-5 lg:px-0">
     <div class="container mx-auto">
         <h2 class="text-mainColor font-bold text-5xl pb-5">Our Values</h2> <hr>
         <div x-data="{ open: false }" class="bg-gray-50 py-2 flex flex-col items-center justify-center relative overflow-hidden ">
