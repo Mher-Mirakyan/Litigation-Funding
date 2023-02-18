@@ -1,32 +1,8 @@
 console.log("The app is running from the terminal using `node index.js` or `node .`");
 
-// Install LiveReload daemon: `npm install -D livereload`.
-// LiveReload starts a separate process to watch for project file changes.
-const livereload = require("livereload");
-const liveReloadServer = livereload.createServer();
-
-// Need to signal the browser to reload the page when the server is restarted.
-// This is tricky, since when "nodemon" kills the server, the LiveReload server
-// is also disconnected.
-// The solution is using the connection event from the browser (because the
-// browser will try to reconnect automatically). When this event is received,
-// pause the webserver for a short period (100ms) to allow LiveReload to reboot.
-// Then, request a browser refresh (only once to avoid an infinite refresh loop).
-liveReloadServer.server.once("connection", () => {
-  setTimeout(() => {
-    liveReloadServer.refresh("/");
-  }, 100);
-});
-
-// Install "connect-livereload" package: `npm install -D connect-livereload`.
-// Once LiveReload is running, it needs a way to force the browser to refresh
-// when any changes happen. This is what "connect-livereload" does.
-const connectLivereload = require("connect-livereload");
-
 const express = require("express");
 const app = express();
 const PORT = process.env.PORT || 3000;
-app.use(connectLivereload());
 
 // import axios HTTP client
 const axios = require("axios");
