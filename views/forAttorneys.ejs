@@ -3,16 +3,16 @@
     <!-- Section 1 -->
     <div style="background-image: url('/legal-funds.webp');" class="container-fluid bg-cover bg-no-repeat bg-center py-40 relative mt-12">
         <div class="absolute h-full w-full top-0 left-0" style="background:rgba(0,0,0,0.5)"></div>
-            <h2 class="text-5xl font-bold text-white text-center relative z-30">Client Legal Funding for Attorneys</h2>
+            <h2 class="text-5xl font-bold text-white text-center relative z-30"><%= headline %></h2>
        </div>
 
     <!-- Section 2 -->
     <div class="container-fluid bg-white pt-10 pb-48 px-5">
         <div class="mx-auto text-center flex justify-center">
-            <p class="text-mainColor text-3xl lg:w-2/3">Express Legal Funding is on your client’s side. We can provide client legal funding without the hassle.</p>
+            <p class="text-mainColor text-3xl lg:w-2/3"><%= sec_2_title %></p>
         </div>
         <div class="mx-auto text-center flex justify-center">
-            <p class="text-mainColor text-2xl lg:w-1/3 py-20">Pre-settlement funding can ease your clients’ financial burden, giving you time to fight for the full value of their case.</p>
+            <p class="text-mainColor text-2xl lg:w-1/3 py-20"><%= sec_2_text %></p>
         </div>
 
         <div class="w-full container mx-auto lg:flex lg:justify-around">
@@ -31,10 +31,10 @@
        </div>
        <div class="container mx-auto lg:flex lg:justify-around">
         <div class="w-full lg:w-1/2 py-10 px-5 lg:px-12">
-            <h4 class="text-mainColor font-bold text-6xl">Help Clients Regain Financial Freedom</h4>
-            <p class="text-lg py-5">Client legal funding, often incorrectly referred to as “pre-settlement loans,” can help your clients pay their bills and make new purchases. We know that injuries bring additional expenses and lost wages no matter your clients’ unique financial situations.<br><br>
+            <h4 class="text-mainColor font-bold text-6xl"><%= sec_3_title %></h4>
+            <p class="text-lg py-5"><%= sec_3_paragraph_1 %><br><br>
 
-                That’s why we make client legal funding fast and affordable! So your clients can get the financial help they need, and you can keep fighting for the fair and just settlements your clients deserve.</p>
+                <%= sec_3_paragraph_2 %></p>
         </div>
         <div class="w-full lg:w-1/2 py-10 px-12 flex justify-between">
             <ul class="list-disc text-lg text-mainColor leading-10 w-full lg:w-1/2">
@@ -53,8 +53,8 @@
     <!-- Section 4 -->
     <div class="container-fluid bg-white py-20 px-5">
         <div class="container mx-auto text-center">
-            <h2 class="text-3xl lg:text-7xl text-gray-800 font-bold">Transparent Funding Contracts</h2>
-            <p class="text-2xl text-mainColor py-10 w-2/3 mx-auto">We stand by the transparency and affordability of our client legal funding agreements. That’s why we love it when attorneys and law firm staff request a sample contract as proof. Contact us now for your sample funding agreement.</p>
+            <h2 class="text-3xl lg:text-7xl text-gray-800 font-bold"><%= sec_4_title %></h2>
+            <p class="text-2xl text-mainColor py-10 w-2/3 mx-auto"><%= sec_4_text %></p>
             <a href="#"><button class="bg-mainColor mb-2 py-3 lg:px-16 text-white text-xl font-bold rounded-full hover:bg-black duration-200 w-full lg:w-2/12">Contact Us</button></a>
 
         </div>
@@ -64,10 +64,10 @@
     <div class="container-fluid relative bg-gray-100 lg:pt-28 pb-12 px-5">
        <div class="container mx-auto lg:flex lg:justify-around">
         <div class="w-full lg:w-1/2 py-10 lg:px-12">
-            <h4 class="text-mainColor font-bold text-3xl">Cases We Fund</h4>
-            <p class="text-lg py-5">We can provide client legal funding for all types of personal injury and civil lawsuit cases in which the attorney is on a contingency fee basis. As long as your clients seek financial compensation for their injuries or damages, they are qualified to apply for legal funding.<br><br>
+            <h4 class="text-mainColor font-bold text-3xl"><%= sec_5_title %></h4>
+            <p class="text-lg py-5"><%= sec_5_paragraph_1 %><br><br>
 
-                We can advance your clients anywhere between $550 to $500,000 in cash, depending on the value of their case. </p>
+                <%= sec_5_paragraph_2 %> </p>
         </div>
         <div class="w-full lg:w-1/2 py-10 px-12 lg:flex justify-between">
             <ul class="list-disc text-lg text-mainColor leading-10 w-full lg:w-1/2">
@@ -91,7 +91,7 @@
         </div>
        </div>
        <div class="container mx-auto text-center">
-       <p class="text-mainColor text-2xl">Call us anytime to discuss how Express Legal Funding can help your clients procure legal funding. <span class="font-bold">(888) 232-9223</span></p>
+       <p class="text-mainColor text-2xl"><%- sec_5_text %></p>
        </div>
    </div>
 
@@ -99,7 +99,7 @@
       <div style="background-image: url('/contact-express-legal-funding.webp');" class="container-fluid py-32 bg-cover bg-no-repeat bg-center relative">
             <div class="absolute h-full w-full top-0 left-0" style="background:rgba(0,0,0,0.5)"></div>
             <div class="container mx-auto relative z-40 text-center">
-                <h2 class="text-white text-6xl font-bold">Help your clients now.</h2>
+                <h2 class="text-white text-6xl font-bold"><%= sec_6_title %></h2>
                 <div class="w-full container mx-auto lg:flex lg:justify-center px-4 mt-3">
                     <button class="bg-mainColor text-white text-xl font-bold rounded-full w-full lg:w-2/12 lg:mr-2 mb-2 py-3 lg:px-16 duration-300 hover:bg-white hover:text-black">Contact Us</button>
                 </div>
@@ -109,11 +109,11 @@
     <!-- Section 7 (Questions) -->
     <div class="container-fluid bg-white py-20 px-5 lg:px-0">
         <div class="container mx-auto">
-            <h2 class="text-mainColor font-bold text-5xl pb-5">Support Team</h2> <hr>
+            <h2 class="text-mainColor font-bold text-5xl pb-5"> <%= sec_7_title %> </h2> <hr>
             <div x-data="{ open: false }" class=" bg-gray-50 py-2 flex flex-col items-center justify-center relative overflow-hidden ">
                 <div  @click="open = ! open" class="p-4 bg-green-100 w-1/2 rounded flex justify-between items-center">
                   <div class="flex items-center gap-2">
-                      <h4 class="font-medium text-sm text-mainColor">Who will speak with my client?</h4>
+                      <h4 class="font-medium text-sm text-mainColor"><%= sec_7_question_1 %></h4>
                   </div>
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
@@ -125,15 +125,15 @@
                       x-transition:leave="transition ease-in duration-300"
                       x-transition:leave-start="opacity-100 translate-y-10"
                       x-transition:leave-end="opacity-0 translate-y-0" class="w-1/2 bg-white p-4 ">
-                  <h4 class="text-sm text-slate-400 mb-2">Your clients can speak with a client legal funding expert concerned about their well-being. Our firm comprises skilled legal and financial specialists, including a registered attorney.</h4>
-                  <h4 class="text-sm text-slate-400">We understand how to move the lawsuit funding process forward while providing all aspects to your clients.</h4>
+                  <h4 class="text-sm text-slate-400 mb-2"><%= sec_7_answer_1_1 %></h4>
+                  <h4 class="text-sm text-slate-400"><%= sec_7_answer_1_2 %></h4>
                 </div>
               </div>
 
               <div x-data="{ open: false }" class=" bg-gray-50 py-2 flex flex-col items-center justify-center relative overflow-hidden ">
                 <div  @click="open = ! open" class="p-4 bg-green-100 w-1/2 rounded flex justify-between items-center">
                   <div class="flex items-center gap-2">
-                      <h4 class="font-medium text-sm text-mainColor">Do you provide help to Spanish-speaking clients?</h4>
+                      <h4 class="font-medium text-sm text-mainColor"><%= sec_7_question_2 %></h4>
                   </div>
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
@@ -145,16 +145,14 @@
                       x-transition:leave="transition ease-in duration-300"
                       x-transition:leave-start="opacity-100 translate-y-10"
                       x-transition:leave-end="opacity-0 translate-y-0" class="w-1/2 bg-white p-4 ">
-                  <h4 class="text-sm text-slate-400">Yes! We have fluent multilingual team members to assist your clients in obtaining pre-settlement funding when required.
-                    Furthermore, we endeavor to guarantee that a language barrier does not prevent your clients from receiving the necessary financial assistance.
-                    </h4>
+                  <h4 class="text-sm text-slate-400"><%= sec_7_answer_2_1 %></h4>
                 </div>
               </div>
 
               <div x-data="{ open: false }" class=" bg-gray-50 py-2 flex flex-col items-center justify-center relative overflow-hidden ">
                 <div  @click="open = ! open" class="p-4 bg-green-100 w-1/2 rounded flex justify-between items-center">
                   <div class="flex items-center gap-2">
-                      <h4 class="font-medium text-sm text-mainColor">Is getting legal funding a time-consuming process?</h4>
+                      <h4 class="font-medium text-sm text-mainColor"><%= sec_7_question_3 %></h4>
                   </div>
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
@@ -166,13 +164,13 @@
                       x-transition:leave="transition ease-in duration-300"
                       x-transition:leave-start="opacity-100 translate-y-10"
                       x-transition:leave-end="opacity-0 translate-y-0" class="w-1/2 bg-white p-4 ">
-                  <h4 class="text-sm text-slate-400 mb-2">When you choose our Firm to assist your clients, pre-settlement funding is relatively easy. We are aware of the burdens of both the attorney and the legal firm. That is why we handle all the documentation required to assist your clients with funding 24 hours a day, seven days a week.</h4>
+                  <h4 class="text-sm text-slate-400 mb-2"><%= sec_7_answer_3_1 %></h4>
                 </div>
               </div>
               <div x-data="{ open: false }" class=" bg-gray-50 py-2 flex flex-col items-center justify-center relative overflow-hidden">
                 <div  @click="open = ! open" class="p-4 bg-green-100 w-1/2 rounded flex justify-between items-center">
                   <div class="flex items-center gap-2">
-                      <h4 class="font-medium text-sm text-mainColor">How can I receive the most recent payment updates for my clients?</h4>
+                      <h4 class="font-medium text-sm text-mainColor"><%= sec_7_question_4 %></h4>
                   </div>
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
@@ -184,7 +182,7 @@
                       x-transition:leave="transition ease-in duration-300"
                       x-transition:leave-start="opacity-100 translate-y-10"
                       x-transition:leave-end="opacity-0 translate-y-0" class="w-1/2 bg-white p-4 ">
-                  <h4 class="text-sm text-slate-400 mb-2">Please contact us by (telephone) or mail. We also send monthly payback statements.</h4>
+                  <h4 class="text-sm text-slate-400 mb-2"><%= sec_7_answer_4_1 %></h4>
                 </div>
               </div>
 
@@ -196,11 +194,11 @@
     <!-- Section 8 (Questions) -->
     <div class="container-fluid bg-gray-100 py-20 px-5 lg:px-0">
             <div class="container mx-auto">
-                <h2 class="text-mainColor font-bold text-5xl pb-5">Practical Questions</h2> <hr>
+                <h2 class="text-mainColor font-bold text-5xl pb-5"><%= sec_8_title %></h2> <hr>
                 <div x-data="{ open: false }" class=" bg-gray-50 py-2 flex flex-col items-center justify-center relative overflow-hidden ">
                     <div  @click="open = ! open" class="p-4 bg-green-100 w-1/2 rounded flex justify-between items-center">
                       <div class="flex items-center gap-2">
-                          <h4 class="font-medium text-sm text-mainColor">What is non-recourse legal funding?</h4>
+                          <h4 class="font-medium text-sm text-mainColor"><%= sec_8_question_1 %></h4>
                       </div>
                       <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
@@ -212,16 +210,16 @@
                           x-transition:leave="transition ease-in duration-300"
                           x-transition:leave-start="opacity-100 translate-y-10"
                           x-transition:leave-end="opacity-0 translate-y-0" class="w-1/2 bg-white p-4 ">
-                      <h4 class="text-sm text-slate-400 mb-2">Non-recourse legal funding means we do not need to investigate your client's credit history or legal status. Your consumers will be able to relax knowing that they can qualify with bad credit and that a low credit score will not cause their interest rates to rise.</h4>
-                      <h4 class="text-sm text-slate-400 mb-2">Above all, because client legal finance is a risk-free cash advance on a potential settlement or trial award, your clients never have to pay out of pocket while their case is still pending.</h4>
-                      <h4 class="text-sm text-slate-400">Finally, we are only compensated once plaintiffs win or settle their cases.</h4>
+                      <h4 class="text-sm text-slate-400 mb-2"><%= sec_8_answer_1_1 %></h4>
+                      <h4 class="text-sm text-slate-400 mb-2"><%= sec_8_answer_1_2 %></h4>
+                      <h4 class="text-sm text-slate-400"><%= sec_8_answer_1_3 %></h4>
                     </div>
                   </div>
     
                   <div x-data="{ open: false }" class=" bg-gray-50 py-2 flex flex-col items-center justify-center relative overflow-hidden ">
                     <div  @click="open = ! open" class="p-4 bg-green-100 w-1/2 rounded flex justify-between items-center">
                       <div class="flex items-center gap-2">
-                          <h4 class="font-medium text-sm text-mainColor">How do my clients apply for legal aid?</h4>
+                          <h4 class="font-medium text-sm text-mainColor"><%= sec_8_question_2 %></h4>
                       </div>
                       <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
@@ -233,14 +231,14 @@
                           x-transition:leave="transition ease-in duration-300"
                           x-transition:leave-start="opacity-100 translate-y-10"
                           x-transition:leave-end="opacity-0 translate-y-0" class="w-1/2 bg-white p-4 ">
-                      <h4 class="text-sm text-slate-400">Your customers can apply for legal funding anytime by dialing (number) or filling out a brief online funding application. We only need your client's name, contact information, and the type of case..</h4>
+                      <h4 class="text-sm text-slate-400"><%= sec_8_answer_2_1 %></h4>
                     </div>
                   </div>
     
                   <div x-data="{ open: false }" class=" bg-gray-50 py-2 flex flex-col items-center justify-center relative overflow-hidden ">
                     <div  @click="open = ! open" class="p-4 bg-green-100 w-1/2 rounded flex justify-between items-center">
                       <div class="flex items-center gap-2">
-                          <h4 class="font-medium text-sm text-mainColor">When can my client receive legal funding?</h4>
+                          <h4 class="font-medium text-sm text-mainColor"><%= sec_8_question_3 %></h4>
                       </div>
                       <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
@@ -252,15 +250,15 @@
                           x-transition:leave="transition ease-in duration-300"
                           x-transition:leave-start="opacity-100 translate-y-10"
                           x-transition:leave-end="opacity-0 translate-y-0" class="w-1/2 bg-white p-4 ">
-                      <h4 class="text-sm text-slate-400 mb-2">We can accept your referral of an injured client once he has retained you.</h4>
-                      <h4 class="text-sm text-slate-400 mb-2">We can provide legal funds to your clients at any stage of the case, whether before or after the lawsuit is filed or even throughout the entire appeals process.</h4>
+                      <h4 class="text-sm text-slate-400 mb-2"><%= sec_8_answer_3_1 %></h4>
+                      <h4 class="text-sm text-slate-400 mb-2"><%= sec_8_answer_3_2 %></h4>
                     </div>
                   </div>
     
                   <div x-data="{ open: false }" class=" bg-gray-50 py-2 flex flex-col items-center justify-center relative overflow-hidden ">
                     <div  @click="open = ! open" class="p-4 bg-green-100 w-1/2 rounded flex justify-between items-center">
                       <div class="flex items-center gap-2">
-                          <h4 class="font-medium text-sm text-mainColor">What information do you need?</h4>
+                          <h4 class="font-medium text-sm text-mainColor"><%= sec_8_question_4 %></h4>
                       </div>
                       <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
@@ -272,15 +270,15 @@
                           x-transition:leave="transition ease-in duration-300"
                           x-transition:leave-start="opacity-100 translate-y-10"
                           x-transition:leave-end="opacity-0 translate-y-0" class="w-1/2 bg-white p-4 ">
-                      <h4 class="text-sm text-slate-400 mb-2">We can grant legal money to a client with very little information from the lawyer. We usually only need the claim type, a summary of the claim, and the attorney's approval.</h4>
-                      <h4 class="text-sm text-slate-400 mb-2">In most circumstances, we do not even request theories of liability. Equally important, we never request case documentation or client medical records. When it comes to your client's well-being, the less information we request, the better.</h4>
+                      <h4 class="text-sm text-slate-400 mb-2"><%= sec_8_answer_4_1 %></h4>
+                      <h4 class="text-sm text-slate-400 mb-2"><%= sec_8_answer_4_2 %></h4>
                     </div>
                   </div>
     
                   <div x-data="{ open: false }" class=" bg-gray-50 py-2 flex flex-col items-center justify-center relative overflow-hidden ">
                     <div  @click="open = ! open" class="p-4 bg-green-100 w-1/2 rounded flex justify-between items-center">
                       <div class="flex items-center gap-2">
-                          <h4 class="font-medium text-sm text-mainColor">Will you be involved in the case of my client?</h4>
+                          <h4 class="font-medium text-sm text-mainColor"><%= sec_8_question_5 %></h4>
                       </div>
                       <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
@@ -292,8 +290,8 @@
                           x-transition:leave="transition ease-in duration-300"
                           x-transition:leave-start="opacity-100 translate-y-10"
                           x-transition:leave-end="opacity-0 translate-y-0" class="w-1/2 bg-white p-4 ">
-                      <h4 class="text-sm text-slate-400 mb-2">No. We do not get engaged in the case and do not provide legal advice.</h4>
-                      <h4 class="text-sm text-slate-400 mb-2">However, we educate clients and law firms on the differences between legal finance and loans. This allows them to make the best pre-settlement financial decisions for their customers.</h4>
+                      <h4 class="text-sm text-slate-400 mb-2"><%= sec_8_answer_5_1 %></h4>
+                      <h4 class="text-sm text-slate-400 mb-2"><%= sec_8_answer_5_2 %></h4>
                     </div>
                   </div>
     
@@ -303,11 +301,11 @@
     <!-- Section 9 (Questions) -->
     <div class="container-fluid bg-white py-20 px-5 lg:px-0">
         <div class="container mx-auto">
-            <h2 class="text-mainColor font-bold text-5xl pb-5">Interest Rates</h2> <hr>
+            <h2 class="text-mainColor font-bold text-5xl pb-5"><%= sec_9_title %></h2> <hr>
             <div x-data="{ open: false }" class="bg-gray-50 py-2 flex flex-col items-center justify-center relative overflow-hidden ">
                 <div  @click="open = ! open" class="p-4 bg-green-100 w-1/2 rounded flex justify-between items-center">
                   <div class="flex items-center gap-2">
-                      <h4 class="font-medium text-sm text-mainColor">How do we keep our client's legal finance interest rate so low?</h4>
+                      <h4 class="font-medium text-sm text-mainColor"><%= sec_9_question_1 %></h4>
                   </div>
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
@@ -319,19 +317,19 @@
                       x-transition:leave="transition ease-in duration-300"
                       x-transition:leave-start="opacity-100 translate-y-10"
                       x-transition:leave-end="opacity-0 translate-y-0" class="w-1/2 bg-white p-4 ">
-                  <h4 class="text-sm text-slate-400 mb-2">Unlike many lawsuit funding organizations that rely on outside financial sources and third-party investment groups, we use our cash to provide legal funding to your clients.</h4>
-                  <h4 class="text-sm text-slate-400 mb-2">The presence of external investors, by definition, encourages other funding businesses to charge significantly higher interest rates to your clients.</h4>
-                  <h4 class="text-sm text-slate-400 mb-2">If you obtain finance for your clients from a source other than our Firm, you will almost certainly be in a lose-lose situation for you and your clients.</h4>
-                  <h4 class="text-sm text-slate-400 mb-2">Not only does the other company's expensive funding arrangement mean that your clients receive a lower portion of their settlement or trial judgment money, but it also means that you, the lawyer, must send them a smaller check at the end of their case.</h4>
-                  <h4 class="text-sm text-slate-400 mb-2">You secure and preserve your clients' final settlement or trial award by selecting our Compay and our low rate.</h4>
-                  <h4 class="text-sm text-slate-400">More attorneys realize that by switching to our Company, they may get their clients more litigation money now and in the future. We are more than just a legal funding firm; we are the best legal funding firm for your clients.</h4>
+                  <h4 class="text-sm text-slate-400 mb-2"><%= sec_9_answer_1_1 %></h4>
+                  <h4 class="text-sm text-slate-400 mb-2"><%= sec_9_answer_1_2 %></h4>
+                  <h4 class="text-sm text-slate-400 mb-2"><%= sec_9_answer_1_3 %></h4>
+                  <h4 class="text-sm text-slate-400 mb-2"><%= sec_9_answer_1_4 %></h4>
+                  <h4 class="text-sm text-slate-400 mb-2"><%= sec_9_answer_1_5 %></h4>
+                  <h4 class="text-sm text-slate-400"><%= sec_9_answer_1_6 %></h4>
                 </div>
               </div>
 
               <div x-data="{ open: false }" class="bg-gray-50 py-2 flex flex-col items-center justify-center relative overflow-hidden ">
                 <div  @click="open = ! open" class="p-4 bg-green-100 w-1/2 rounded flex justify-between items-center">
                   <div class="flex items-center gap-2">
-                      <h4 class="font-medium text-sm text-mainColor">What if another company claims to have lower interest rates?</h4>
+                      <h4 class="font-medium text-sm text-mainColor"><%= sec_9_question_2 %></h4>
                   </div>
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
@@ -343,16 +341,18 @@
                       x-transition:leave="transition ease-in duration-300"
                       x-transition:leave-start="opacity-100 translate-y-10"
                       x-transition:leave-end="opacity-0 translate-y-0" class="w-1/2 bg-white p-4 ">
-                  <h4 class="text-sm text-slate-400">Don't just accept their word for it; instead, ask them the five questions below:</h4>
+                  <h4 class="text-sm text-slate-400"><%= sec_9_answer_2_1 %></h4>
                   <ul class="list-disc leading-5 text-sm text-mainColor px-10">
-                    <li>Could you send me an example $1,000 funding contract with the same terms you'd have my clients sign?</li>
-                    <li>What is the contract's interest rate?</li>
-                    <li>What fee(s) are included in the contract? How and how frequently are costs calculated?</li>
-                    <li>What costs or fees are not included in the contract?</li>
-                    <li>What is the name of the company that will be on the contract?</li>
+                    <% if (locals.sec_9_answer_2_1uls && sec_9_answer_2_1uls.length > 0) { %>
+                      <% sec_9_answer_2_1uls.forEach(function(item, index) { %>
+                          <li> <%= item %> </li>
+  
+  
+                      <% }); %>
+                  <% } %>
                   </ul>
-                  <h4 class="text-sm text-slate-400">If they can't or won't answer these questions satisfactorily, it's an issue that should be addressed.</h4>
-                  <h4 class="text-sm text-slate-400">We are the most affordable client lawsuit funding organization and have nothing to conceal from you or your clients.</h4>
+                  <h4 class="text-sm text-slate-400"><%= sec_9_answer_2_2 %></h4>
+                  <h4 class="text-sm text-slate-400"><%= sec_9_answer_2_3 %></h4>
 
                 </div>
               </div>
@@ -360,7 +360,7 @@
               <div x-data="{ open: false }" class="bg-gray-50 py-2 flex flex-col items-center justify-center relative overflow-hidden ">
                 <div  @click="open = ! open" class="p-4 bg-green-100 w-1/2 rounded flex justify-between items-center">
                   <div class="flex items-center gap-2">
-                      <h4 class="font-medium text-sm text-mainColor">Do you use brokers to provide legal funds to your clients?</h4>
+                      <h4 class="font-medium text-sm text-mainColor"><%= sec_9_question_3 %></h4>
                   </div>
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
@@ -372,17 +372,17 @@
                       x-transition:leave="transition ease-in duration-300"
                       x-transition:leave-start="opacity-100 translate-y-10"
                       x-transition:leave-end="opacity-0 translate-y-0" class="w-1/2 bg-white p-4 ">
-                  <h4 class="text-sm text-slate-400 mb-2">Companies that use "lawsuit loan brokers" to enhance client volume do so at the expense of each client. They levy an additional broker commission fee to your client, which applies to their interest rates. We have no intention of doing so.</h4>
-                  <h4 class="text-sm text-slate-400 mb-2">For example, suppose your client acquires $2,000 in legal financing from a broker who receives a 20% upfront commission charge. In that case, your client immediately owes interest on a total of $2,500 in lawsuit funding rather than the funded sum of $2,000. Your client would pay interest on $500 they never saw or profited from.</h4>
-                  <h4 class="text-sm text-slate-400 mb-2">At our Company, we purposefully do not engage with brokers or have a broker program to save your customers money in case of a settlement or trial award.</h4>
-                  <h4 class="text-sm text-slate-400 mb-2">Because some of the biggest names in the field have broker programs doesn't mean it's the best or most ethical legal funding solution for you and your clients.</h4>
+                  <h4 class="text-sm text-slate-400 mb-2"><%= sec_9_answer_3_1 %></h4>
+                  <h4 class="text-sm text-slate-400 mb-2"><%= sec_9_answer_3_2 %></h4>
+                  <h4 class="text-sm text-slate-400 mb-2"><%= sec_9_answer_3_3 %></h4>
+                  <h4 class="text-sm text-slate-400 mb-2"><%= sec_9_answer_3_4 %></h4>
                 </div>
               </div>
 
               <div x-data="{ open: false }" class="bg-gray-50 py-2 flex flex-col items-center justify-center relative overflow-hidden ">
                 <div  @click="open = ! open" class="p-4 bg-green-100 w-1/2 rounded flex justify-between items-center">
                   <div class="flex items-center gap-2">
-                      <h4 class="font-medium text-sm text-mainColor">How can I receive the most recent payment updates for my clients?</h4>
+                      <h4 class="font-medium text-sm text-mainColor"><%= sec_9_question_4 %></h4>
                   </div>
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
@@ -394,7 +394,7 @@
                       x-transition:leave="transition ease-in duration-300"
                       x-transition:leave-start="opacity-100 translate-y-10"
                       x-transition:leave-end="opacity-0 translate-y-0" class="w-1/2 bg-white p-4 ">
-                  <h4 class="text-sm text-slate-400 mb-2">Please contact us by (telephone) or mail. We also send monthly payback statements.</h4>
+                  <h4 class="text-sm text-slate-400 mb-2"><%= sec_9_answer_4_1 %></h4>
                 </div>
               </div>
 
@@ -406,11 +406,11 @@
     <!-- Section 10 (Questions) -->
  <div class="container-fluid bg-gray-100 py-20 px-5 lg:px-0">
     <div class="container mx-auto">
-        <h2 class="text-mainColor font-bold text-5xl pb-5">Our Values</h2> <hr>
+        <h2 class="text-mainColor font-bold text-5xl pb-5"><%= sec_10_title %></h2> <hr>
         <div x-data="{ open: false }" class="bg-gray-50 py-2 flex flex-col items-center justify-center relative overflow-hidden ">
             <div  @click="open = ! open" class="p-4 bg-green-100 w-1/2 rounded flex justify-between items-center">
               <div class="flex items-center gap-2">
-                  <h4 class="font-medium text-sm text-mainColor">Will you fund my client for more than I believe the case is worth?</h4>
+                  <h4 class="font-medium text-sm text-mainColor"><%= sec_10_question_1 %></h4>
               </div>
               <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
@@ -422,14 +422,14 @@
                   x-transition:leave="transition ease-in duration-300"
                   x-transition:leave-start="opacity-100 translate-y-10"
                   x-transition:leave-end="opacity-0 translate-y-0" class="w-1/2 bg-white p-4 ">
-              <h4 class="text-sm text-slate-400 mb-2">We make it a high priority to only fund your clients for what you feel appropriate. We don't want to make it more difficult for you to settle your issues.</h4>
+              <h4 class="text-sm text-slate-400 mb-2"><%= sec_10_answer_1_1 %></h4>
             </div>
           </div>
 
           <div x-data="{ open: false }" class="bg-gray-50 py-2 flex flex-col items-center justify-center relative overflow-hidden ">
             <div  @click="open = ! open" class="p-4 bg-green-100 w-1/2 rounded flex justify-between items-center">
               <div class="flex items-center gap-2">
-                  <h4 class="font-medium text-sm text-mainColor">What are the long-term advantages of client legal funding?</h4>
+                  <h4 class="font-medium text-sm text-mainColor"><%= sec_10_question_2 %></h4>
               </div>
               <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
@@ -441,9 +441,9 @@
                   x-transition:leave="transition ease-in duration-300"
                   x-transition:leave-start="opacity-100 translate-y-10"
                   x-transition:leave-end="opacity-0 translate-y-0" class="w-1/2 bg-white p-4 ">
-              <h4 class="text-sm text-slate-400">Client legal funding should provide long-term benefits to injured plaintiffs and their attorneys when done correctly.</h4>
-              <h4 class="text-sm text-slate-400">Often, a client's financial condition forces him to accept for significantly less than the actual value of his case. This is where we step in. We can provide your clients with legal funding to sustain themselves financially during their lawsuits.</h4>
-              <h4 class="text-sm text-slate-400">While doing so, you will regain the advantage of time, allowing you to completely implement your optimal legal plan and offer your clients the financial reward they deserve.</h4>
+              <h4 class="text-sm text-slate-400"><%= sec_10_answer_2_1 %></h4>
+              <h4 class="text-sm text-slate-400"><%= sec_10_answer_2_2 %></h4>
+              <h4 class="text-sm text-slate-400"><%= sec_10_answer_2_3 %></h4>
 
             </div>
           </div>
@@ -451,7 +451,7 @@
           <div x-data="{ open: false }" class="bg-gray-50 py-2 flex flex-col items-center justify-center relative overflow-hidden ">
             <div  @click="open = ! open" class="p-4 bg-green-100 w-1/2 rounded flex justify-between items-center">
               <div class="flex items-center gap-2">
-                  <h4 class="font-medium text-sm text-mainColor">Why do attorneys prefer to work with us?</h4>
+                  <h4 class="font-medium text-sm text-mainColor"><%= sec_10_question_3 %></h4>
               </div>
               <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
@@ -463,8 +463,8 @@
                   x-transition:leave="transition ease-in duration-300"
                   x-transition:leave-start="opacity-100 translate-y-10"
                   x-transition:leave-end="opacity-0 translate-y-0" class="w-1/2 bg-white p-4 ">
-              <h4 class="text-sm text-slate-400 mb-2">A qualified attorney with over 30 years of expertise representing victims of personal injury and workers' compensation claims leads our client legal funding team. We can quickly assess the required amount of money to fund your clients with minimal information.</h4>
-              <h4 class="text-sm text-slate-400 mb-2">We understand what it's like to be a plaintiff lawyer and how valuable time is, so we do everything we can to make client lawsuit funding easier for you and your law office personnel.</h4>
+              <h4 class="text-sm text-slate-400 mb-2"><%= sec_10_answer_3_1 %></h4>
+              <h4 class="text-sm text-slate-400 mb-2"><%= sec_10_answer_3_2 %></h4>
             </div>
           </div>
 
